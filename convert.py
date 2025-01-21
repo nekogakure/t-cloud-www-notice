@@ -19,7 +19,7 @@ html_content = md.convert(target_file)
 # 出力ディレクトリとファイル名の設定
 output_dir = 'html'
 os.makedirs(output_dir, exist_ok=True)
-output_file_name = os.path.splitext(os.path.basename(file_path))[0] + '.php'
+output_file_name = os.path.splitext(os.path.basename(file_path))[0] + '.html'
 output_file_path = os.path.join(output_dir, output_file_name)
 
 # HTMLファイルに書き込み
